@@ -1,0 +1,182 @@
+
+      
+      @media screen and (min-width: 641px){
+        section {
+        background-color: khaki;
+      }
+      main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        grid-template-rows: repeat(6, 200px);
+        grid-template-areas:
+          "a1 a1 a1 f6"
+          "a1 a1 a1 d4"
+          "a1 a1 a1 h8"
+          "g7 g7 c3 e5"
+          "i9 k11 j10 e5"
+          "b2 b2 b2 b2"
+      }
+
+      section:first-of-type {
+        grid-area: a1 ;
+      }
+
+      section:nth-of-type(2) {
+        grid-area:b2 ;
+      }
+      section:nth-of-type(3) {
+        grid-area:c3 ;
+      }
+      section:nth-of-type(4) {
+        grid-area:d4 ;
+        /* filter: blur(30px); this is not related to layout, but is a good property worth looking into */
+      }
+      section:nth-of-type(5) {
+        grid-area:e5 ;
+      }
+      section:nth-of-type(6) {
+        grid-area:f6 ;
+      }
+      section:nth-of-type(7) {
+        grid-area:g7 ;
+      }
+      section:nth-of-type(8) {
+        grid-area:h8 ;
+      }
+      section:nth-of-type(9) {
+        grid-area:i9 ;
+      }
+      section:nth-of-type(10) {
+        grid-area:j10;
+      }
+      section:nth-of-type(11) {
+        grid-area:k11 ;
+      }
+      }
+
+
+      @media screen and (max-width: 640px){
+        section {
+        background-color: crimson;
+      }
+      main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        grid-template-rows: repeat(8, 200px);
+        grid-template-areas:" "
+          
+      }
+
+      section:first-of-type {
+        grid-area: 1/1/3/3 ;
+      }
+
+      section:nth-of-type(2) {
+        grid-area:3/1/4/2 ;
+      }
+      section:nth-of-type(3) {
+        grid-area:4/1/5/2 ;
+      }
+      section:nth-of-type(4) {
+        grid-area:5/1/6/2 ;
+        /* filter: blur(30px); this is not related to layout, but is a good property worth looking into */
+      }
+      section:nth-of-type(5) {
+        grid-area:6/1/7/2 ;
+      }
+      section:nth-of-type(6) {
+        grid-area:7/1/8/3 ;
+      }
+      section:nth-of-type(7) {
+        grid-area:8/1/9/3 ;
+      }
+      section:nth-of-type(8) {
+        grid-area:6/2/7/3 ;
+      }
+      section:nth-of-type(9) {
+        grid-area:5/2/6/3;
+      }
+      section:nth-of-type(10) {
+        grid-area:4/2/5/3;
+      }
+      section:nth-of-type(11) {
+        grid-area:3/2/4/3 ;
+      }
+      }
+      
+
+
+      @media screen and (max-width: 480px) and(orientation: landscape){
+        section {
+        background-color: green;
+      }
+      main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        grid-template-rows: repeat(11, 200px);
+        grid-template-areas:
+        "a1"
+        "b2"
+        "c3"
+        "d4"
+        "e5"
+        "f6"
+        "g7"
+        "h8"
+        "i9"
+        "j10"
+        "k11"
+          
+      }
+
+
+      section:first-of-type {
+        grid-area: a1 ;
+      }
+
+      section:nth-of-type(2) {
+        grid-area:b2 ;
+      }
+      section:nth-of-type(3) {
+        grid-area:c3 ;
+      }
+      section:nth-of-type(4) {
+        grid-area:d4 ;
+        /* filter: blur(30px); this is not related to layout, but is a good property worth looking into */
+      }
+      section:nth-of-type(5) {
+        grid-area:e5 ;
+      }
+      section:nth-of-type(6) {
+        grid-area:f6 ;
+      }
+      section:nth-of-type(7) {
+        grid-area:g7 ;
+      }
+      section:nth-of-type(8) {
+        grid-area:h8 ;
+      }
+      section:nth-of-type(9) {
+        grid-area:i9 ;
+      }
+      section:nth-of-type(10) {
+        grid-area:j10;
+      }
+      section:nth-of-type(11) {
+        grid-area:k11 ;
+      }
+      
+    }
+    
+
+@media print{
+    section{
+        border: 10px double;
+        height: 300px;
+        text-align: center;
+        background-color: violet;
+    }
+}

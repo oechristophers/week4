@@ -3,27 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./boxModel.css">
     <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
     <title>Document</title>
-    
+    <style>
+        li{
+            display: inline-block;
+            width: 40%;
+        }
+        h2,p, section{
+            background-color: crimson;
+        }
+        /* section{
+            display: grid;
+          grid-template-columns: 1fr 5fr;     colomns shouldnt go beyond 12fr in total 
+          grid-template-rows: 200px;
+          column-gap:20px ;
+        } */
+        main{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 30px;
+            grid-template-rows: repeat(2, 200px);
+        }
+    </style>
 </head>
 <body>
-    <!-- Create six sections. each section should have a h2, and a paragraph. The text inside the h2 should be model1...down to the 6th h2. The font size of the root element should be 20px. The main element should have a width 75% the size of its parent, and should be positioned at the center of its parents.
-
-    Each section should have a minimum height of 40vh.The paragraph should have a font size of 1.5 the size of the root element. The text should overflow auto.Give it a line height of double or "2.0 line height". and the p should have a height of 150px.
-      The even section should have a border of top and bottom, and the odd section should have a border of left and right. The border width should be two times the size of its parents.
-    
-    H2 element should have a margin left and riht of 0, and top and bottom of 11px. It should have a padding bottom of 8px, with a border bottom.-->
 <main>
-    <ol>
+    <!-- <ol>
         <li>inline block 1</li>
         <li>inline block 2</li>
         <li>inline block 3</li>
         <li>inline block 4</li>
         <li>inline block 5</li>
         <li>inline block 6</li>
-    </ol>
+    </ol> -->
     <section>
         <h2>Model 1</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae neque mollitia optio possimus, aspernatur obcaecati dicta? Est quam omnis saepe?</p>
